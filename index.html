@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cửa hàng thời trang nam A Long</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Cửa hàng thời trang nam A Long</h1>
+    </div>
+    <div class="main-container">
+        <!-- Phần nhập thông tin -->
+        <div class="form-container">
+            <h2>Nhập thông tin của bạn để chọn size phù hợp</h2>
+            <form id="sizeForm">
+                <div class="input-group">
+                    <label for="height">Chiều cao (cm):</label>
+                    <input type="number" id="height" placeholder="Nhập chiều cao của bạn">
+                </div>
+                <div class="input-group">
+                    <label for="weight">Cân nặng (kg):</label>
+                    <input type="number" id="weight" placeholder="Nhập cân nặng của bạn">
+                </div>
+                <div class="input-group">
+                    <label for="waist">Vòng eo (cm):</label>
+                    <input type="number" id="waist" placeholder="Nhập số đo vòng eo">
+                </div>
+                <div class="input-group">
+                    <label for="legLength">Chiều dài chân (cm):</label>
+                    <input type="number" id="legLength" placeholder="Nhập chiều dài chân">
+                </div>
+                <div class="input-group">
+                    <label for="shoulder">Chiều dài vai (cm):</label>
+                    <input type="number" id="shoulder" placeholder="Nhập chiều dài vai">
+                </div>
+                <div class="input-group">
+                    <label for="chest">Vòng ngực (cm):</label>
+                    <input type="number" id="chest" placeholder="Nhập số đo vòng ngực">
+                </div>
+                <button type="button" onclick="calculateSize()">Tính size</button>
+            </form>
+            <div id="result"></div>
+        </div>
+
+        <!-- Phần bảng size -->
+        <div class="size-table-container">
+            <h2>Bảng size quần</h2>
+            <table>
+                <tr>
+                    <th>Kích cỡ quần</th>
+                    <th>Vòng eo (cm)</th>
+                    <th>Chiều dài chân (cm)</th>
+                </tr>
+                <tr>
+                    <td>S</td>
+                    <td>68 - 72</td>
+                    <td>81 - 82</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>74 - 78</td>
+                    <td>82 - 83</td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>82 - 84</td>
+                    <td>84</td>
+                </tr>
+                <tr>
+                    <td>XL</td>
+                    <td>87</td>
+                    <td>85</td>
+                </tr>
+            </table>
+
+            <h2>Bảng size áo</h2>
+            <table>
+                <tr>
+                    <th>Size áo</th>
+                    <th>Dài áo (cm)</th>
+                    <th>Ngực (cm)</th>
+                    <th>Cân nặng (kg)</th>
+                    <th>Chiều cao (cm)</th>
+                </tr>
+                <tr>
+                    <td>S</td>
+                    <td>63 - 67</td>
+                    <td>46 - 50</td>
+                    <td>50 - 60</td>
+                    <td>160 - 167</td>
+                </tr>
+                <tr>
+                    <td>M</td>
+                    <td>65 - 69</td>
+                    <td>48 - 52</td>
+                    <td>55 - 65</td>
+                    <td>165 - 172</td>
+                </tr>
+                <tr>
+                    <td>L</td>
+                    <td>67 - 71</td>
+                    <td>50 - 54</td>
+                    <td>65 - 75</td>
+                    <td>165 - 180</td>
+                </tr>
+                <tr>
+                    <td>XL</td>
+                    <td>69 - 73</td>
+                    <td>52 - 56</td>
+                    <td>75 - 90</td>
+                    <td>170 - 190</td>
+                </tr>
+                <tr>
+                    <td>XXL</td>
+                    <td>70 - 75</td>
+                    <td>53 - 57</td>
+                    <td>85 - 100</td>
+                    <td>170 - 190</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
